@@ -1,0 +1,15 @@
+
+body{
+  background:url('/static/images/bg_red.jpg') no-repeat fixed;
+}
+div{
+  border-radius: 5px;
+  padding:50px;
+margin-top:100px;
+font-family: 'Girassol', cursive;
+background-color: white;
+}
+
+div.container{
+  margin: 1px solid black;
+}

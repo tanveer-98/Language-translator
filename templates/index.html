@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+{%load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="{% static 'css/mystyles.css'%}">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+  <body>
+    <div class="container text-center">
+      <h1> Welcome to Language Translator</h1>
+
+
+      <form  method="post">
+         <label for="in_text">TRANSLATE TEXT</label>
+         <br>
+         <textarea name="in_text" rows="8" cols="80"></textarea>
+         <p></p>
+         <label for="t_to">TRANSALATE TO</label>
+         <br>
+         <input type="text" name="t_to" >
+         <p></p>
+         <input class ="btn btn-primary" type="submit" value="TRANSLATE">
+      </form>
+      <br>
+      <textarea  rows="8" cols="80">{{translated_text}}</textarea>
+    </div>
+
+  </body>
+</html>
